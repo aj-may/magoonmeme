@@ -10,12 +10,18 @@
     <body>
         <img id="magoon-photo" src="img/magoon.jpg" style="display:none" />
         <canvas id="meme"></canvas>
-        <form id="caption-form" onsubmit="return false">
-            <input type="text" name="top" onkeyup="updateCanvas()" value="one does not simply" autocomplete="off" />
-            <input type="text" name="bottom" onkeyup="updateCanvas()" value="docker compose" autocomplete="off" />
-        </form>
+        <div id="container">
+            <h1>Magoon Meme Generator</h1>
 
-        <a href="" download="magoonmeme.png" id="download-link">Download</a>
+            <form id="caption-form" onsubmit="return false">
+                <label for="top">Top Caption:</label>
+                <input type="text" name="top" onkeyup="updateCanvas()" value="one does not simply" autocomplete="off" />
+                <label for="bottom">Bottom Caption:</label>
+                <input type="text" name="bottom" onkeyup="updateCanvas()" value="docker compose" autocomplete="off" />
+            </form>
+
+            <a href="" download="magoonmeme.png" id="download-link" class="btn"><span>Download</span> 👇</a>
+        </div>
 
         <script type="text/javascript" src="/js/main.js"></script>
     </body>

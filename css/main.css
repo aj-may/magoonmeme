@@ -1,3 +1,49 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica', 'sans serif';
+}
+
+#meme {
+  width: 450px;
+  height: auto;
+  max-width: 100%;
+  margin-right: 1em;
+}
+
+#container {
+  padding: 1em;
+  padding-bottom: 3em;
+}
+
+#caption-form {
+  margin-bottom: 1em;
+}
+
+#caption-form label {
+  font-size: .7em
+}
+
 #caption-form input {
-    text-transform: uppercase;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 1em;
+  font-family: 'HelveticaNeue-CondensedBold';
+  font-size: 1em;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: MediumSeaGreen;
+  padding: .7em;
+  color: white;
+}
+
+.btn:hover span {
+  text-decoration: underline;
 }
