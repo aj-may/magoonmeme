@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Magoon Meme Generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <img id="magoon-photo" src="img/magoon.jpg" style="display:none" />
+        <canvas id="meme"></canvas>
+        <form id="caption-form" onsubmit="return false">
+            <input type="text" name="top" onkeyup="updateCanvas()" value="one does not simply" autocomplete="off" />
+            <input type="text" name="bottom" onkeyup="updateCanvas()" value="docker compose" autocomplete="off" />
+        </form>
+
+        <a href="" download="magoonmeme.png" id="download-link">Download</a>
+
+        <script type="text/javascript" src="/js/main.js"></script>
+    </body>
+</html>
